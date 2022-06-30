@@ -17,4 +17,13 @@ describe('Testes da função HandlerElephants', () => {
   it('Testa se ao invocar a função passando averageAge como parametro, retorna a média de idade dos elefantes', () => {
     assert.strictEqual(handlerElephants('averageAge'), 10.5);
   });
+  it('Testa se ao invocar a função passando popularity como parametro, retorna a popularidade dos elefantes', () => {
+    assert.strictEqual(handlerElephants('popularity'), 5);
+  });
+  it('Testa se ao invocar a função passando availability como parametro, retorna os dias para visitar os elefantes', () => {
+    expect(handlerElephants('availability')).toContain('Friday', 'Saturday', 'Sunday', 'Tuesday');
+  });
+  it('Testa se ao invocar a função passando location como parametro, retorna a localização dos elefantes dentro do Zoológico', () => {
+    assert.strictEqual(handlerElephants('location'), 'NW');
+  });
 });
