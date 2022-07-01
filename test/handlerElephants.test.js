@@ -5,7 +5,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Testa se a função handlerElephants retorna undefined se não for passado nenhum parametro', () => {
     assert.strictEqual(handlerElephants(), undefined);
   });
-  it('Testa se a função retorna um erro se o parametro passado não for uma string', () => {
+  it('Testa se ao invocar função retorna um erro se o parametro passado não for uma string', () => {
     assert.strictEqual(handlerElephants(1), 'Parâmetro inválido, é necessário uma string');
   });
   it('Testa se ao invocar a função passando count como parametro, retorna o Length de count (4)', () => {

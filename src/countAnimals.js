@@ -8,11 +8,11 @@ function countAnimals(animal) {
     return obj;
   }
   if (Object.keys(animal).length === 1) {
-    return parseInt(species.map((element) => element).filter((element) =>
+    return parseInt(species.filter((element) =>
       element.name === Object.values(animal)[0]).map((element) => element.residents.length), 0);
   }
   if (Object.keys(animal).length > 1) {
-    return parseInt(species.map((element) => element).filter((element) =>
+    return parseInt(species.filter((element) =>
       element.name === Object.values(animal)[0]).map((element) =>
       element.residents.filter((element1) =>
         element1.sex === 'female')).map((length) => length.length), 0);
