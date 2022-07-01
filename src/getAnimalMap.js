@@ -1,6 +1,6 @@
 const data = require('../data/zoo_data');
 
-const { species, employees, hours, prices } = require('../data/zoo_data');
+const { species } = require('../data/zoo_data');
 
 function getAnimalByRegion(region, includesName, sex, sorted) {
   let animals = species.filter((element) => element.location === region).map((name) => name.name);
